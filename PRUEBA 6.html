@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 20px;
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+}
+
+input[type="text"], input[type="date"], input[type="tel"], input[type="email"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto; /* Cambié esto para que se vea mejor */
+    margin-right: 10px;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 10px 20px;
+    border: none; /* Corregido */
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #45a049; /* Corregido */
+}
+</style>
+</head>
+<body>
+
+<h1>FORMULARIO</h1><br>
+<form action="#" method="post"> <!-- Cambiado a # -->
+
+<label for="nombre"><b>Nombre completo</b></label><br>
+<input type="text" id="nombre" name="nombre" placeholder="Escribe Tu Nombre Completo" required><br>
+
+<label><b>Fecha de Nacimiento</b></label><br>
+<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+
+<label><b>Numero De Telefono</b></label><br>
+<input type="tel" id="telefono" name="telefono" placeholder="Escribe Tu Numero De Telefono" required><br>
+
+<label for="correo"><b>Correo Electronico</b></label><br>
+<input type="email" id="correo" name="correo" placeholder="Escribe tu Correo Electronico" required><br>
+
+<label><b>Sexo</b></label><br>
+<input type="radio" id="masculino" name="genero" value="M" checked> Masculino<br>
+<input type="radio" id="femenino" name="genero" value="F"> Femenino<br>
+<input type="radio" id="otro" name="genero" value="O"> Otro<br>
+
+<label for="deporte"><b>¿Qué Deporte Realizas?</b></label><br>
+<input type="checkbox" id="futbol" name="deporte" value="Futbol"> Futbol<br>
+<input type="checkbox" id="gym" name="deporte" value="Gym"> Gym<br>
+<input type="checkbox" id="voleibol" name="deporte" value="Voleibol"> Voleibol<br>
+<input type="checkbox" id="basquetbol" name="deporte" value="Basquetbol"> Basquetbol<br>
+
+<label for="nacionalidad"><b>Nacionalidad</b></label><br>
+<select id="nacionalidad" name="nacionalidad">
+    <option value="Boliviano">Boliviano</option>
+    <option value="Peruano">Peruano</option>
+    <option value="Chileno">Chileno</option>
+    <option value="Argentino">Argentino</option>
+</select><br>
+
+<label for="idioma"><b>¿Qué idioma conoces?</b></label><br>
+<input type="checkbox" id="ingles" name="idioma" value="Ingles"> Inglés<br>
+<input type="checkbox" id="espanol" name="idioma" value="Español"> Español<br>
+<input type="checkbox" id="portugues" name="idioma" value="Portugues"> Portugués<br>
+<input type="checkbox" id="frances" name="idioma" value="Frances"> Francés<br>
+
+<label for="contacto"><b>Preferencia de Contacto</b></label><br>
+<select id="contacto" name="contacto">
+    <option value="telefono">Teléfono</option>
+    <option value="correo">Correo Electrónico</option>
+</select><br>
+
+<label for="comentario"><b>Escribe que te gusta hacer en tus ratos libres</b></label><br>
+<textarea id="comentario" name="comentario" rows="4" cols="44" placeholder="Escribe algo de ti...."></textarea><br>
+
+<input type="submit" name="Boton1" value="Enviar"> 
+<input type="reset" name="Boton2" value="Cancelar">
+</form>
+</body>
+</html>
